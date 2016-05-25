@@ -1,43 +1,46 @@
-jQuery Simple Counter
-===================
+Counter-Up
+==========
 
-###Simple jQuery Animate Counter
+Counter-Up is a jQuery plugin that *animates* a number from zero (counting up towards it). It supports counting up:
 
+* integers `12345`
+* floats `0.1234`
+* numbers with commas `1,234,567.00`
 
-```sh
-<div id="count-test"></div>
+*Requires [waypoints.js](http://imakewebthings.com/jquery-waypoints/)*
+
+Demo
+====
+
+**[DEMO](http://bfintal.github.io/Counter-Up/demo/demo.html)**
+
+Usage
+=====
+
+**HTML**
+
+```
+<span class="counter">1,234,567.00</span>
 ```
 
-```sh
-<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-<script type="text/javascript" src="jQuerySimpleCounter.js"></script>
+**jQuery**
+
+```
+$('.counter').counterUp();
 ```
 
-```sh
-$('#count-test').jQuerySimpleCounter({
-		end:100,
-		duration: 4000
+**Extra parameters**
+
+```
+$('.counter').counterUp({
+    delay: 10,
+    time: 1000
 });
-
 ```
 
-###More options:
+Social Stuff
+============
 
-```sh
-{
-    start:  0, // inicial number
-    end:    100, // final number
-    easing: 'swing',
-    duration: 400,
-    complete: function(){
-      console.log('Hello!');
-    }
+Twitter: [@bfintal](https://twitter.com/bfintal) & [@gambitph](https://twitter.com/gambitph)
 
-}
-```
-#####Author:
-[Marcos César](http://github.com/marcoscesar)
-
-#####Credits:
-[Joss Crowcroft](https://github.com/josscrowcroft)
-- [Use jQuery.animate() to increment / decrement numeric text or an element’s value](http://www.josscrowcroft.com/2011/code/jquery-animate-increment-decrement-numeric-text-elements-value)
+Google+: <a href='https://plus.google.com/113101541449927918834' rel='author'>+Benjamin Intal</a>
