@@ -2,7 +2,7 @@
 	$.fn.jQuerySimpleCounter = function( options ) {
 	    var settings = $.extend({
 	        start:  0,
-	        end:    100,
+	        end:    800,
 	        easing: 'swing',
 	        duration: 200,
 	        complete: ''
