@@ -4,7 +4,7 @@
 	        start:  0,
 	        end:    100,
 	        easing: 'swing',
-	        duration: 400,
+	        duration: 200,
 	        complete: ''
 	    }, options );
 
